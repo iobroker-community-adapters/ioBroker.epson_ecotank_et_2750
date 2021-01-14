@@ -26,7 +26,7 @@ This adapter read tank level and other information from EPSON EcoTank ET-2750 an
 	Placeholder for the next version (at the beginning of the line):
 	### __WORK IN PROGRESS__
 -->
-### 0.0.2 (2021-01-14)
+### 0.0.3 (2021-01-14)
 * (o0shojo0o) Add compact mode
 * (o0shojo0o) All necessary changes for EPSON EcoTank ET-2750
 * (o0shojo0o) New tree structure

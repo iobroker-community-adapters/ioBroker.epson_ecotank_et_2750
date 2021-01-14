@@ -12,9 +12,9 @@
             "de": "EPSON EcoTank ET-2750 Tintenstatus",
             "ru": "EPSON EcoTank ET-2750 Статус технического обслуживания"
         },
-        "version": "0.0.2",
+        "version": "0.0.3",
         "news": {
-            "0.0.2": {
+            "0.0.3": {
                 "en": "Add compact mode\nAll necessary changes for EPSON EcoTank ET-2750\nNew tree structure\nReplacing the request with axios npm module",
                 "de": "Kompaktmodus hinzufügen\nAlle notwendigen Änderungen für EPSON EcoTank ET-2750\nNeue Baumstruktur\nErsetzen der Anforderung durch das axios npm-Modul",
                 "ru": "Добавить компактный режим\nВсе необходимые изменения для EPSON EcoTank ET-2750\nНовая древовидная структура\nЗамена запроса на модуль axios npm",
