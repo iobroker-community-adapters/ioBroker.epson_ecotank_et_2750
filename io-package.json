@@ -1,0 +1,190 @@
+{
+    "common": {
+        "name": "epson_ecotank_et_2750",
+        "title": "EPSON EcoTank ET-2750",
+        "titleLang": {
+            "en": "EPSON EcoTank ET-2750",
+            "de": "EPSON EcoTank ET-2750",
+            "ru": "EPSON EcoTank ET-2750"
+        },
+        "desc": {
+            "en": "EPSON EcoTank ET-2750 Ink Status",
+            "de": "EPSON EcoTank ET-2750 Tintenstatus",
+            "ru": "EPSON EcoTank ET-2750 Статус технического обслуживания"
+        },
+        "version": "0.0.1",
+        "news": {
+            "0.0.1": {
+                "en": "forked from rrov1 Epson Workforce",
+                "de": "forked from rrov1 Epson Workforce",
+                "ru": "вилка из Рров1 Epson Workforce"
+            }
+        },
+        "mode": "daemon",
+        "compact": true,
+        "connectionType": "local",
+        "dataSource": "poll",
+        "platform": "javascript/Node.js",
+        "loglevel": "info",
+        "materialize": true,
+        "keywords": [
+            "printer",
+            "ink",
+            "Epson",
+            "Tinte",
+            "Drucker",
+            "pix",
+            "office"
+        ],
+        "main": "main.js",
+        "authors": [
+            "o0shojo0o"
+        ],
+        "license": "MIT",
+        "readme": "https://github.com/o0shojo0o/ioBroker.epson_ecotank_et_2750/blob/master/README.md",
+        "icon": "epson_ecotank_et_2750.png",
+        "extIcon": "https://github.com/o0shojo0o/ioBroker.epson_ecotank_et_2750/blob/master/admin/epson_ecotank_et_2750.png",
+        "allowInit": true,
+        "type": "infrastructure",
+        "config": {
+            "width": 650,
+            "height": 500,
+            "minWidth": 650,
+            "minHeight": 450
+        }
+    },
+    "native": {
+        "printerip": "",
+        "printerport": "",
+        "synctime": ""
+    },
+    "objects": [],
+    "instanceObjects": [
+        {
+            "_id": "info",
+            "type": "channel",
+            "common": {
+                "name": "Information"
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.connection",
+            "type": "state",
+            "common": {
+                "role": "indicator.connected",
+                "name": "Printer connected",
+                "type": "boolean",
+                "read": true,
+                "write": false,
+                "def": false
+            },
+            "native": {}
+        },
+        {
+            "_id": "inks",
+            "type": "channel",
+            "common": {
+                "role": "",
+                "name": "Different inks of printer"
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.ip",
+            "type": "state",
+            "common": {
+                "name": "Printer IP",
+                "desc": "Printer IP adress",
+                "type": "string",
+                "read": true,
+                "write": false
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.mac",
+            "type": "state",
+            "common": {
+                "name": "Printer MAC",
+                "desc": "Printer MAC adress",
+                "type": "string",
+                "read": true,
+                "write": false
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.model",
+            "type": "state",
+            "common": {
+                "name": "Printer Model",
+                "desc": "Printer model type",
+                "type": "string",
+                "read": true,
+                "write": false
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.name",
+            "type": "state",
+            "common": {
+                "name": "Printer Name",
+                "desc": "Printer Name",
+                "type": "string",
+                "read": true,
+                "write": false
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.firmware",
+            "type": "state",
+            "common": {
+                "name": "Printer Firmware",
+                "desc": "Printer firmware version",
+                "type": "string",
+                "read": true,
+                "write": false
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.serial",
+            "type": "state",
+            "common": {
+                "name": "Printer Serial Number",
+                "desc": "Printer Serial Number",
+                "type": "string",
+                "read": true,
+                "write": false
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.first_print_date",
+            "type": "state",
+            "common": {
+                "name": "Printer First Print Date",
+                "desc": "Printer First Print Date",
+                "type": "string",
+                "read": true,
+                "write": false
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.page_count",
+            "type": "state",
+            "common": {
+                "name": "Printed Pages Count",
+                "desc": "Printed Pages Count",
+                "type": "number",
+                "read": true,
+                "write": false
+            },
+            "native": {}
+        }
+    ]
+}
