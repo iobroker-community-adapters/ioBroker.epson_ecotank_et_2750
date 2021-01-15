@@ -6,7 +6,7 @@
 
 [![NPM](https://nodei.co/npm/iobroker.epson_ecotank_et_2750.png?downloads=true)](https://nodei.co/npm/iobroker.epson_ecotank_et_2750/)
 
-## Seq adapter for ioBroker
+## EPSON EcoTank ET-2750 adapter for ioBroker
 
 This adapter read tank level and other information from EPSON EcoTank ET-2750 and store in ioBroker.
 
