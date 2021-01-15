@@ -8,9 +8,9 @@
             "ru": "EPSON EcoTank ET-2750"
         },
         "desc": {
-            "en": "EPSON EcoTank ET-2750 Ink Status",
-            "de": "EPSON EcoTank ET-2750 Tintenstatus",
-            "ru": "EPSON EcoTank ET-2750 Статус технического обслуживания"
+            "en": "This adapter read tank level and other information from EPSON EcoTank ET-2750 and store in ioBroker.\nEPSON EcoTank ET-4750 is also supported (tested by Homoran)",
+            "de": "Dieser Adapter liest den Tankfüllstand und andere Informationen aus dem EPSON EcoTank ET-2750 und speichert sie in ioBroker.\nEPSON EcoTank ET-4750 wird ebenfalls unterstützt (getestet von Homoran)",
+            "ru": "Этот адаптер считывает уровень бака и другую информацию из EPSON EcoTank ET-2750 и хранит в ioBroker.\nEPSON EcoTank ET-4750 также поддерживается (протестирован Homoran)."
         },
         "version": "0.0.3",
         "news": {
