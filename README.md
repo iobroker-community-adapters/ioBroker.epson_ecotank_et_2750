@@ -28,11 +28,14 @@ This adapter read tank level and other information from [EPSON EcoTank ET-2750](
 	Placeholder for the next version (at the beginning of the line):
 	### __WORK IN PROGRESS__
 -->
+### __WORK IN PROGRESS__
+* (o0shojo0o) bugfix first_print_date for 4750
+
 ### 0.0.3 (2021-01-14)
-* (o0shojo0o) Add compact mode
-* (o0shojo0o) All necessary changes for EPSON EcoTank ET-2750
-* (o0shojo0o) New tree structure
-* (o0shojo0o) Replacing the request with axios npm module
+* (o0shojo0o) add compact mode
+* (o0shojo0o) all necessary changes for EPSON EcoTank ET-2750
+* (o0shojo0o) new tree structure
+* (o0shojo0o) replacing the request with axios npm module
 
 ### 0.0.1 (2021-01-03)
 * (o0shojo0o) forked from iobroker.epson_stylus_px830 0.2.1
