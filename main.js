@@ -220,7 +220,7 @@ async function readPrinterMaintenance() {
 
         let match, rx, first_print_string, printed_pages_string;
         // ERSTDRUCKDATUM EINLESEN
-        rx = new RegExp( /(?:Erstdruckdatum|First Printing Date|Date de première impression|Data prima stampa|Primera fecha de impresión|Data da primeira impressão)&nbsp;\:<\/span><\/dt><dd class=\"value clearfix\"><div class=\"preserve-white-space\">(\d\d\d\d\-\d\d\-\d\d)<\/div>/g );
+        rx = new RegExp( /(?:Erstdruckdatum|First Printing Date|Date de première impression|Data prima stampa|Primera fecha de impresión|Data da primeira impressão)&nbsp;\:<\/span><\/dt><dd class=\"value clearfix\"><div class=\"preserve-white-space\">((\d\d\-\d\d\-\d\d\d\d)|(\d\d\d\d\-\d\d\-\d\d))<\/div>/g );
         while((match = rx.exec(resp.data)) != null) {
             first_print_string = match[1];
         }
