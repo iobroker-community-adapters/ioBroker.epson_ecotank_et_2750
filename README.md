@@ -1,8 +1,8 @@
 ![Logo](admin/epson_ecotank_et_2750.png)
 # ioBroker.epson_ecotank_et_2750
 
-![Number of Installations](https://iobroker.live/badges/epson_ecotank_et_2750-installed.svg) ![Number of Installations](https://iobroker.live/badges/epson_ecotank_et_2750-stable.svg) [![NPM version](https://img.shields.io/npm/v/iobroker.epson_ecotank_et_2750.svg)](https://www.npmjs.com/package/iobroker.epson_ecotank_et_2750)
-[![Downloads](https://img.shields.io/npm/dm/iobroker.epson_ecotank_et_2750.svg)](https://www.npmjs.com/package/iobroker.epson_ecotank_et_2750)
+![Number of Installations](https://iobroker.live/badges/epson_ecotank_et_2750-installed.svg?dummy=unused) ![Number of Installations](https://iobroker.live/badges/epson_ecotank_et_2750-stable.svg?dummy=unused) [![NPM version](https://img.shields.io/npm/v/iobroker.epson_ecotank_et_2750.svg?dummy=unused)](https://www.npmjs.com/package/iobroker.epson_ecotank_et_2750)
+[![Downloads](https://img.shields.io/npm/dm/iobroker.epson_ecotank_et_2750.svg?dummy=unused)](https://www.npmjs.com/package/iobroker.epson_ecotank_et_2750)
 
 [![NPM](https://nodei.co/npm/iobroker.epson_ecotank_et_2750.png?downloads=true)](https://nodei.co/npm/iobroker.epson_ecotank_et_2750/)
 
