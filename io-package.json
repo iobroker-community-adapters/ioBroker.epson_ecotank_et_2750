@@ -55,7 +55,7 @@
         "license": "MIT",
         "readme": "https://github.com/o0shojo0o/ioBroker.epson_ecotank_et_2750/blob/master/README.md",
         "icon": "epson_ecotank_et_2750.png",
-        "extIcon": "https://github.com/o0shojo0o/ioBroker.epson_ecotank_et_2750/blob/master/admin/epson_ecotank_et_2750.png",
+        "extIcon": "https://raw.githubusercontent.com/o0shojo0o/ioBroker.epson_ecotank_et_2750/master/admin/epson_ecotank_et_2750.png",
         "allowInit": true,
         "type": "infrastructure",
         "config": {
