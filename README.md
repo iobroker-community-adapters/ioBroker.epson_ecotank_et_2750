@@ -16,7 +16,7 @@ This adapter read tank level and other information from [EPSON EcoTank ET-2750](
 
 1. Create a new instance of the adapter
 2. Fill the URL/IP and port of the EPSON EcoTank ET-2750
-3. Configur ther Synctime (default 180 minutes)
+3. Configur ther Synctime (default 10 minutes)
 4. Save the settings
 
 ## Changelog
