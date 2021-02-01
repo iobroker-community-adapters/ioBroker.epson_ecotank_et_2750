@@ -50,7 +50,7 @@
         ],
         "main": "main.js",
         "authors": [
-            "Dennis Rathjen"
+            "Dennis Rathjen <info@bastelbunker.de>"
         ],
         "license": "MIT",
         "readme": "https://github.com/o0shojo0o/ioBroker.epson_ecotank_et_2750/blob/master/README.md",
