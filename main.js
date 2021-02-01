@@ -8,14 +8,13 @@ let callReadPrinter;
 let ip = '';
 const baselevel = 50; // bedeutet: in der Webseite wird ein Balken von 100% Höhe 50px hoch gezeichnet.
 // Also entspricht ein gezeigtes Tintenlevel von 25 (px) dann 50% und eines von 10 (px) dann 20%
-let sync = 180;
+let sync = 10;
 let adapter;
 
 function startAdapter(options) {
     options = options || {};
     Object.assign(options, {
         name: 'epson_ecotank_et_2750',
-        systemConfig: true,
         useFormatDate: true,
         unload: function (callback) {
             try {
@@ -33,7 +32,7 @@ function startAdapter(options) {
     });
     adapter = new utils.Adapter(options);
     return adapter;
-};
+}
 
 const ink = {
     'cyan' : {
@@ -73,7 +72,7 @@ function readSettings() {
         adapter.log.debug('IP: ' + ip);
 
         //check if sync time is entered in settings
-        sync = (!adapter.config.synctime) ? 180 : parseInt(adapter.config.synctime,10);
+        sync = (!adapter.config.synctime) ? 10 : parseInt(adapter.config.synctime,10);
         adapter.log.debug('ioBroker reads printer every ' + sync + ' minutes');
 
     } // end ip entered
@@ -125,7 +124,7 @@ async function readPrinterStatus() {
         adapter.setState('info.serial', {val: serial_string, ack: true});
 
         for (const i in ink) {
-            adapter.setObjectNotExists(`inks.${ink[i].state}`, {
+            await adapter.setObjectNotExists(`inks.${ink[i].state}`, {
                 type: 'state',
                 common: {
                     role: 'level.volume',

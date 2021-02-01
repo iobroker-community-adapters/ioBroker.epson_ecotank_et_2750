@@ -58,12 +58,11 @@
         "extIcon": "https://raw.githubusercontent.com/o0shojo0o/ioBroker.epson_ecotank_et_2750/master/admin/epson_ecotank_et_2750.png",
         "allowInit": true,
         "type": "infrastructure",
-        "config": {
-            "width": 650,
-            "height": 500,
-            "minWidth": 650,
-            "minHeight": 450
-        }
+        "dependencies": [
+            {
+                "js-controller": ">=2.0.0"
+            }
+        ]
     },
     "native": {
         "printerip": "",
