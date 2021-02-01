@@ -12,8 +12,20 @@
             "de": "Dieser Adapter liest den Tankfüllstand und andere Informationen aus dem EPSON EcoTank ET-2750 und speichert sie in ioBroker.\nEPSON EcoTank ET-4750 wird ebenfalls unterstützt (getestet von Homoran)",
             "ru": "Этот адаптер считывает уровень бака и другую информацию из EPSON EcoTank ET-2750 и хранит в ioBroker.\nEPSON EcoTank ET-4750 также поддерживается (протестирован Homoran)."
         },
-        "version": "0.0.3",
+        "version": "0.0.4",
         "news": {
+            "0.0.4": {
+                "en": "bugfix first_print_date for 4750\ncode cleaning and refactoring",
+                "de": "Bugfix first_print_date für 4750\nCode-Reinigung und Refactoring",
+                "ru": "исправление first_print_date для 4750\nчистка и рефакторинг кода",
+                "pt": "correção de bug first_print_date para 4750\nlimpeza e refatoração de código",
+                "nl": "bugfix first_print_date voor 4750\ncode opschonen en refactoren",
+                "fr": "bugfix first_print_date pour 4750\nnettoyage et refactoring de code",
+                "it": "bugfix first_print_date per 4750\npulizia e refactoring del codice",
+                "es": "corrección de errores first_print_date para 4750\nlimpieza y refactorización de código",
+                "pl": "naprawa błędu first_print_date dla 4750\nczyszczenie i refaktoryzacja kodu",
+                "zh-cn": "错误修正first_print_date为4750\n代码清理和重构"
+            },
             "0.0.3": {
                 "en": "Add compact mode\nAll necessary changes for EPSON EcoTank ET-2750\nNew tree structure\nReplacing the request with axios npm module",
                 "de": "Kompaktmodus hinzufügen\nAlle notwendigen Änderungen für EPSON EcoTank ET-2750\nNeue Baumstruktur\nErsetzen der Anforderung durch das axios npm-Modul",

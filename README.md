@@ -28,7 +28,7 @@ This adapter read tank level and other information from [EPSON EcoTank ET-2750](
 	Placeholder for the next version (at the beginning of the line):
 	### __WORK IN PROGRESS__
 -->
-### __WORK IN PROGRESS__
+### 0.0.4 (2021-02-01)
 * (o0shojo0o) bugfix first_print_date for 4750
 * (o0shojo0o) code cleaning and refactoring
 
