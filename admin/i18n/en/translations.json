@@ -1,0 +1,10 @@
+{
+    "Enter IP adress": "Enter IP adress",
+    "Epson Adapter settings": "Epson EPSON EcoTank ET-2750 Adapter settings",
+    "IP": "ip adress of printer",
+    "Port": "Port number",
+    "Printer settings": "Printer settings",
+    "Synchronization": "Synchronization",
+    "default is 10": "if left empty '10' will be used",
+    "normally no port setting is required": "normally no port setting is required"
+}

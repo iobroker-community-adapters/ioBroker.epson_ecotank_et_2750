@@ -5,12 +5,26 @@
         "titleLang": {
             "en": "EPSON EcoTank ET-2750",
             "de": "EPSON EcoTank ET-2750",
-            "ru": "EPSON EcoTank ET-2750"
+            "ru": "EPSON EcoTank ET-2750",
+            "pt": "EPSON EcoTank ET-2750",
+            "nl": "EPSON EcoTank ET-2750",
+            "fr": "EPSON EcoTank ET-2750",
+            "it": "EPSON EcoTank ET-2750",
+            "es": "EPSON EcoTank ET-2750",
+            "pl": "EPSON EcoTank ET-2750",
+            "zh-cn": "爱普生EcoTank ET-2750"
         },
         "desc": {
             "en": "This adapter read tank level and other information from EPSON EcoTank ET-2750 and store in ioBroker.\nEPSON EcoTank ET-4750 is also supported (tested by Homoran)",
             "de": "Dieser Adapter liest den Tankfüllstand und andere Informationen aus dem EPSON EcoTank ET-2750 und speichert sie in ioBroker.\nEPSON EcoTank ET-4750 wird ebenfalls unterstützt (getestet von Homoran)",
-            "ru": "Этот адаптер считывает уровень бака и другую информацию из EPSON EcoTank ET-2750 и хранит в ioBroker.\nEPSON EcoTank ET-4750 также поддерживается (протестирован Homoran)."
+            "ru": "Этот адаптер считывает уровень бака и другую информацию из EPSON EcoTank ET-2750 и хранит в ioBroker.\nEPSON EcoTank ET-4750 также поддерживается (протестирован Homoran).",
+            "pt": "Este adaptador lê o nível do tanque e outras informações do EPSON EcoTank ET-2750 e armazena no ioBroker.\n",
+            "nl": "Deze adapter leest het tankniveau en andere informatie van de EPSON EcoTank ET-2750 en slaat deze op in ioBroker.\n",
+            "fr": "Cet adaptateur lit le niveau du réservoir et d'autres informations d'EPSON EcoTank ET-2750 et stocke dans ioBroker.\n",
+            "it": "Questo adattatore legge il livello del serbatoio e altre informazioni da EPSON EcoTank ET-2750 e memorizza in ioBroker.\n",
+            "es": "Este adaptador lee el nivel del tanque y otra información de EPSON EcoTank ET-2750 y lo almacena en ioBroker.\n",
+            "pl": "Ten adapter odczytuje poziom w zbiorniku i inne informacje z EPSON EcoTank ET-2750 i zapisuje w ioBroker.\n",
+            "zh-cn": "该适配器从EPSON EcoTank ET-2750读取水箱液位和其他信息，并存储在ioBroker中。\n"
         },
         "version": "0.0.4",
         "news": {
@@ -41,7 +55,14 @@
             "0.0.1": {
                 "en": "forked from rrov1 Epson Workforce",
                 "de": "forked from rrov1 Epson Workforce",
-                "ru": "вилка из Рров1 Epson Workforce"
+                "ru": "вилка из Рров1 Epson Workforce",
+                "pt": "bifurcado de rrov1 Epson Workforce",
+                "nl": "gevorkt van rrov1 Epson Workforce",
+                "fr": "fourchu de rrov1 Epson Workforce",
+                "it": "biforcuta da rrov1 Epson Workforce",
+                "es": "bifurcado de rrov1 Epson Workforce",
+                "pl": "rozwidlony z rrov1 Epson Workforce",
+                "zh-cn": "从rrov1 Epson Workforce分叉"
             }
         },
         "mode": "daemon",
