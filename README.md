@@ -3,8 +3,8 @@
 
 ![Number of Installations](https://iobroker.live/badges/epson_ecotank_et_2750-installed.svg?dummy=unused) ![Number of Installations](https://iobroker.live/badges/epson_ecotank_et_2750-stable.svg?dummy=unused) [![NPM version](https://img.shields.io/npm/v/iobroker.epson_ecotank_et_2750.svg?dummy=unused)](https://www.npmjs.com/package/iobroker.epson_ecotank_et_2750)
 [![Downloads](https://img.shields.io/npm/dm/iobroker.epson_ecotank_et_2750.svg?dummy=unused)](https://www.npmjs.com/package/iobroker.epson_ecotank_et_2750)
-
 [![NPM](https://nodei.co/npm/iobroker.epson_ecotank_et_2750.png?downloads=true)](https://nodei.co/npm/iobroker.epson_ecotank_et_2750/)
+[![Translation status](https://weblate.iobroker.net/widgets/adapters/-/epson_ecotank_et_2750/svg-badge.svg)](https://weblate.iobroker.net/engage/adapters/?utm_source=widget)
 
 ## EPSON EcoTank ET-2750 adapter for ioBroker
 
