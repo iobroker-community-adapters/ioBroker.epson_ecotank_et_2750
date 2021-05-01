@@ -82,11 +82,6 @@ async function readPrinterStatus() {
 
     const link = 'http://' + ip + '/PRESENTATION/ADVANCED/INFO_PRTINFO/TOP';
 
-    adapter.setState('info.ip', {
-        val: ip,
-        ack: false
-    });
-
     const resp = await axios.get(link);
     if (resp.status === 200) {
 
@@ -162,11 +157,6 @@ async function readPrinterNetwork() {
 
     const link = 'http://' + ip + '/PRESENTATION/ADVANCED/INFO_NWINFO/TOP';
 
-    adapter.setState('info.ip', {
-        val: ip,
-        ack: false
-    });
-
     const resp = await axios.get(link);
     if (resp.status === 200) {
 
@@ -204,12 +194,7 @@ async function readPrinterMaintenance() {
 
     const link = 'http://' + ip + '/PRESENTATION/ADVANCED/INFO_MENTINFO/TOP';
 
-    adapter.setState('info.ip', {
-        val: ip,
-        ack: false
-    });
-
-    const resp = await axios(link);
+    const resp = await axios.get(link);
     if (resp.status === 200) {
 
         adapter.setState('info.ip', {
