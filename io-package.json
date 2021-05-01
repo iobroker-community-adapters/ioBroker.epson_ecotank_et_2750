@@ -26,8 +26,20 @@
             "pl": "Ten adapter odczytuje poziom w zbiorniku i inne informacje z EPSON EcoTank ET-2750 i zapisuje w ioBroker.\n EPSON EcoTank ET-4750 is also supported (tested by Homoran)\n EPSON EcoTank ET-3750 is also supported (tested by christofkac)\nEPSON EcoTank ET-2721 is also supported (tested by mikepiko)",
             "zh-cn": "该适配器从EPSON EcoTank ET-2750读取水箱液位和其他信息，并存储在ioBroker中。\n "
         },
-        "version": "0.0.4",
+        "version": "0.0.5",
         "news": {
+            "0.0.5": {
+                "en": "fix js-controller 3.3.x warnings",
+                "de": "Beheben Sie die Warnungen von js-controller 3.3.x.",
+                "ru": "исправить предупреждения js-controller 3.3.x",
+                "pt": "corrigir avisos do js-controller 3.3.x",
+                "nl": "fix js-controller 3.3.x waarschuwingen",
+                "fr": "correction des avertissements de js-controller 3.3.x",
+                "it": "correggere gli avvisi di js-controller 3.3.x.",
+                "es": "corregir las advertencias de js-controller 3.3.x",
+                "pl": "napraw ostrzeżenia js-controller 3.3.x.",
+                "zh-cn": "修复js-controller 3.3.x警告"
+            },
             "0.0.4": {
                 "en": "bugfix first_print_date for 4750\ncode cleaning and refactoring",
                 "de": "Bugfix first_print_date für 4750\nCode-Reinigung und Refactoring",
