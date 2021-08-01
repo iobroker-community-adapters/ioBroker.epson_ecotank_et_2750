@@ -9,6 +9,7 @@ let ip = '';
 const baselevel = 50; // bedeutet: in der Webseite wird ein Balken von 100% Höhe 50px hoch gezeichnet.
 // Also entspricht ein gezeigtes Tintenlevel von 25 (px) dann 50% und eines von 10 (px) dann 20%
 let sync = 10;
+let isUnloaded = false;
 let adapter;
 
 function startAdapter(options) {
@@ -19,6 +20,7 @@ function startAdapter(options) {
         unload: function (callback) {
             try {
                 stopReadPrinter();
+                isUnloaded = true;
                 callback();
             } catch (e) {
                 callback();
@@ -79,12 +81,15 @@ function readSettings() {
 }
 
 async function readPrinterStatus() {
+    // Check if unload triggerted
+    if (isUnloaded) {
+        return;
+    }
 
     const link = 'http://' + ip + '/PRESENTATION/ADVANCED/INFO_PRTINFO/TOP';
 
     const resp = await axios.get(link);
     if (resp.status === 200) {
-
         adapter.setState('info.ip', {
             val: ip,
             ack: true
@@ -154,6 +159,10 @@ async function readPrinterStatus() {
 }
 
 async function readPrinterNetwork() {
+    // Check if unload triggerted
+    if (isUnloaded) {
+        return;
+    }
 
     const link = 'http://' + ip + '/PRESENTATION/ADVANCED/INFO_NWINFO/TOP';
 
@@ -191,6 +200,10 @@ async function readPrinterNetwork() {
 }
 
 async function readPrinterMaintenance() {
+    // Check if unload triggerted
+    if (isUnloaded) {
+        return;
+    }
 
     const link = 'http://' + ip + '/PRESENTATION/ADVANCED/INFO_MENTINFO/TOP';
 
@@ -238,6 +251,11 @@ function stopReadPrinter() {
 }
 
 async function main() {
+    // Check if unload triggerted
+    if (isUnloaded) {
+        return;
+    }
+
     try {
         adapter.log.debug('Request printer stats...');
         await readPrinterNetwork();
@@ -256,13 +274,10 @@ async function main() {
     callReadPrinter = setTimeout(main, sync * 1000 * 60);
 }
 
-
-
 // If started as allInOne/compact mode => return function to create instance
 if (module && module.parent) {
     module.exports = startAdapter;
 } else {
     // or start the instance directly
     startAdapter();
-
 }
