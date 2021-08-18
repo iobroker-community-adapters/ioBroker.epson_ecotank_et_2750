@@ -26,8 +26,20 @@
             "pl": "Ten adapter odczytuje poziom w zbiorniku i inne informacje z EPSON EcoTank ET-2750 i zapisuje w ioBroker.\n EPSON EcoTank ET-4750 is also supported (tested by Homoran)\n EPSON EcoTank ET-3750 is also supported (tested by christofkac)\nEPSON EcoTank ET-2721 is also supported (tested by mikepiko)",
             "zh-cn": "该适配器从EPSON EcoTank ET-2750读取水箱液位和其他信息，并存储在ioBroker中。\n "
         },
-        "version": "0.0.8",
+        "version": "0.0.9",
         "news": {
+            "0.0.9": {
+                "en": "bugfix for incorrect mapping of settings, second try ...",
+                "de": "Bugfix für falsche Zuordnung von Einstellungen, zweiter Versuch ...",
+                "ru": "исправление неправильного отображения настроек, вторая попытка ...",
+                "pt": "correção de bug para mapeamento incorreto de configurações, segunda tentativa ...",
+                "nl": "bugfix voor onjuiste toewijzing van instellingen, tweede poging ...",
+                "fr": "correction de bug pour un mappage incorrect des paramètres, deuxième essai ...",
+                "it": "bugfix per la mappatura errata delle impostazioni, secondo tentativo ...",
+                "es": "corrección de errores para el mapeo incorrecto de la configuración, segundo intento ...",
+                "pl": "poprawka błędnego mapowania ustawień, druga próba...",
+                "zh-cn": "错误修正了不正确的设置映射，第二次尝试......"
+            },
             "0.0.8": {
                 "en": "bugfix for incorrect mapping of settings",
                 "de": "Bugfix für falsche Zuordnung von Einstellungen",
