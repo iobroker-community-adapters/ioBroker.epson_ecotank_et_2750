@@ -1,10 +1,5 @@
 {
-    "Enter IP adress": "输入IP地址",
-    "Epson Adapter settings": "Epson EPSON EcoTank ET-2750适配器设置",
-    "IP": "打印机的ip地址",
-    "Port": "端口号",
-    "Printer settings": "打印机设定",
-    "Synchronization": "同步化",
-    "default is 10": "如果保留为空，则使用“ 10”",
-    "normally no port setting is required": "通常不需要端口设置"
+    "IP adress of the printer": "打印机的 IP 地址",
+    "Poll Interval (min.)": "轮询间隔（分钟）",
+    "if left empty '10' will be used": "如果留空 '10' 将被使用"
 }

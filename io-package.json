@@ -26,8 +26,20 @@
             "pl": "Ten adapter odczytuje poziom w zbiorniku i inne informacje z EPSON EcoTank ET-2750 i zapisuje w ioBroker.\n EPSON EcoTank ET-4750 is also supported (tested by Homoran)\n EPSON EcoTank ET-3750 is also supported (tested by christofkac)\nEPSON EcoTank ET-2721 is also supported (tested by mikepiko)",
             "zh-cn": "该适配器从EPSON EcoTank ET-2750读取水箱液位和其他信息，并存储在ioBroker中。\n "
         },
-        "version": "0.0.6",
+        "version": "0.0.7",
         "news": {
+            "0.0.7": {
+                "en": "change UI to JSONConfig",
+                "de": "Ändern Sie die Benutzeroberfläche in JSONConfig",
+                "ru": "изменить пользовательский интерфейс на JSONConfig",
+                "pt": "alterar a IU para JSONConfig",
+                "nl": "verander gebruikersinterface in JSONConfig",
+                "fr": "changer l'interface utilisateur en JSONConfig",
+                "it": "cambia l'interfaccia utente in JSONConfig",
+                "es": "cambiar la interfaz de usuario a JSONConfig",
+                "pl": "zmień interfejs użytkownika na JSONConfig",
+                "zh-cn": "将 UI 更改为 JSONConfig"
+            },
             "0.0.6": {
                 "en": "better unload handling",
                 "de": "besseres Entladehandling",
@@ -119,7 +131,10 @@
             {
                 "js-controller": ">=2.0.0"
             }
-        ]
+        ],
+        "adminUI": {
+            "config": "json"
+        }
     },
     "native": {
         "printerip": "",

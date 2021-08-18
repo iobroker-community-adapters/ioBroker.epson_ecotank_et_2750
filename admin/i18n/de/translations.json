@@ -1,10 +1,5 @@
 {
-    "Enter IP adress": "Drucker IP Adresse",
-    "Epson Adapter settings": "EPSON EcoTank ET-2750 Adapter Einstellungen",
-    "IP": "IP Adresse des Druckers",
-    "Port": "Port Nummer",
-    "Printer settings": "Drucker Einstellungen",
-    "Synchronization": "Synchronisierung",
-    "default is 10": "ohne Eingabe wird '10' verwendet",
-    "normally no port setting is required": "Die Eingabe der Portnummer ist nicht zwingend"
+    "IP adress of the printer": "IP-Adresse des Druckers",
+    "Poll Interval (min.)": "Abfrageintervall (Min.)",
+    "if left empty '10' will be used": "wenn leer gelassen wird '10' verwendet"
 }

@@ -1,0 +1,22 @@
+{
+    "type": "panel",
+    "i18n": true,
+    "items": {
+        "printerAddress": {
+            "newLine": true,
+            "type": "text",
+            "label": "IP adress of the printer",
+            "sm": 12,
+            "md": 4,
+            "lg": 3
+        },
+        "pollInterval": {
+            "type": "number",
+            "label": "Poll Interval (min.)",
+            "help": "if left empty '10' will be used",
+            "sm": 12,
+            "md": 4,
+            "lg": 3
+        }
+    }
+}
