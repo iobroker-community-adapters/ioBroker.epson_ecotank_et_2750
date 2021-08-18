@@ -2,7 +2,7 @@
     "type": "panel",
     "i18n": true,
     "items": {
-        "printerAddress": {
+        "printer_ip": {
             "newLine": true,
             "type": "text",
             "label": "IP adress of the printer",
@@ -10,7 +10,7 @@
             "md": 4,
             "lg": 3
         },
-        "pollInterval": {
+        "sync_time": {
             "type": "number",
             "label": "Poll Interval (min.)",
             "help": "if left empty '10' will be used",
