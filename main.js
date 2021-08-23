@@ -106,7 +106,7 @@ async function readPrinterStatus() {
         adapter.setState('info.mac', {val: mac_string, ack: true});
 
         // read firmware version
-        rx = new RegExp( /(?:Firmware)&nbsp;:<\/span><\/dt><dd class=\"value clearfix\"><div class=\"preserve-white-space\">([a-zA-Z0-9 äöüÄÖÜ\-\_\.]*)<\/div>/g );
+        rx = new RegExp( /(?:Firmware.*)&nbsp;:<\/span><\/dt><dd class=\"value clearfix\"><div class=\"preserve-white-space\">([a-zA-Z0-9 äöüÄÖÜ\-\_\.]*)<\/div>/g );
         let firmware_string;
         while((match = rx.exec(resp.data)) != null) {
             firmware_string = match[1];

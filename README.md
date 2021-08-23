@@ -33,6 +33,10 @@ This adapter read tank level and other information from [EPSON EcoTank ET-2750](
 	### **WORK IN PROGRESS**
 -->
 
+### **WORK IN PROGRESS**
+
+-   (o0Shojo0o) fix firmware for Workforce 3620
+
 ### 0.0.10 (2021-08-19)
 
 -   (o0Shojo0o) fix translation
