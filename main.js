@@ -176,7 +176,7 @@ async function readPrinterNetwork() {
 
         let match, rx, name_string, model_string;
         // NAME EINLESEN
-        rx = new RegExp( /(?:Gerätename)&nbsp;:<\/span><\/dt><dd class=\"value clearfix\"><div class=\"preserve-white-space\">([a-zA-Z0-9 äöüÄÖÜ\-\_]*)<\/div>/g );
+        rx = new RegExp( /(?:Gerätename|Druckername)&nbsp;:<\/span><\/dt><dd class=\"value clearfix\"><div class=\"preserve-white-space\">([a-zA-Z0-9 äöüÄÖÜ\-\_]*)<\/div>/g );
         while((match = rx.exec(resp.data)) != null) {
             name_string = match[1];
         }
