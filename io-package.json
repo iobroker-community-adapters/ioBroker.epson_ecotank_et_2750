@@ -26,8 +26,20 @@
             "pl": "Ten adapter odczytuje poziom w zbiorniku i inne informacje z EPSON EcoTank ET-2750 i zapisuje w ioBroker.\n EPSON EcoTank ET-4750 is also supported (tested by Homoran)\n EPSON EcoTank ET-3750 is also supported (tested by christofkac)\nEPSON EcoTank ET-2721 is also supported (tested by mikepiko)",
             "zh-cn": "该适配器从EPSON EcoTank ET-2750读取水箱液位和其他信息，并存储在ioBroker中。\n "
         },
-        "version": "0.0.10",
+        "version": "0.0.11",
         "news": {
+            "0.0.11": {
+                "en": "fix name for Workforce 3620\nfix firmware for Workforce 3620",
+                "de": "fixer Name für Workforce 3620\nFix Firmware für Workforce 3620",
+                "ru": "исправить имя для Workforce 3620\nисправить прошивку для Workforce 3620",
+                "pt": "nome da correção para Workforce 3620\ncorrigir firmware para Workforce 3620",
+                "nl": "naam repareren voor Workforce 3620\nfirmware repareren voor Workforce 3620",
+                "fr": "corriger le nom de Workforce 3620\ncorrection du micrologiciel pour Workforce 3620",
+                "it": "correggere il nome per Workforce 3620\ncorreggere il firmware per Workforce 3620",
+                "es": "arreglar nombre para Workforce 3620\narreglar firmware para Workforce 3620",
+                "pl": "naprawić nazwę dla Workforce 3620\nnapraw firmware dla Workforce 3620",
+                "zh-cn": "Workforce 3620 的固定名称\n修复 Workforce 3620 的固件"
+            },
             "0.0.10": {
                 "en": "fix translation",
                 "de": "Übersetzung korrigieren",

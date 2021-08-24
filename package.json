@@ -1,7 +1,7 @@
 {
   "name": "iobroker.epson_ecotank_et_2750",
   "description": "Ink status and more of EPSON EcoTank ET-2750",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "author": "o0shojo0o",
   "contributors": [
     "o0shojo0o"
@@ -36,7 +36,7 @@
     "@types/chai-as-promised": "^7.1.3",
     "@types/gulp": "^4.0.6",
     "@types/mocha": "^9.0.0",
-    "@types/node": "^16.6.1",
+    "@types/node": "^16.7.1",
     "@types/proxyquire": "^1.3.28",
     "@types/sinon": "^10.0.0",
     "@types/sinon-chai": "^3.2.4",
