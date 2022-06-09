@@ -34,7 +34,7 @@ This adapter read tank level and other information from [EPSON EcoTank ET-2750](
 	### **WORK IN PROGRESS**
 -->
 
-### **WORK IN PROGRESS**
+### 0.0.12 (2022-06-09)
 
 -   (o0Shojo0o)  fix ETIMEDOUT error
 
