@@ -1,285 +1,321 @@
 {
-  "common": {
-    "name": "epson_ecotank_et_2750",
-    "title": "EPSON EcoTank ET-2750",
-    "titleLang": {
-      "en": "EPSON EcoTank ET-2750",
-      "de": "EPSON EcoTank ET-2750",
-      "ru": "EPSON EcoTank ET-2750",
-      "pt": "EPSON EcoTank ET-2750",
-      "nl": "EPSON EcoTank ET-2750",
-      "fr": "EPSON EcoTank ET-2750",
-      "it": "EPSON EcoTank ET-2750",
-      "es": "EPSON EcoTank ET-2750",
-      "pl": "EPSON EcoTank ET-2750",
-      "zh-cn": "爱普生EcoTank ET-2750"
+    "common": {
+        "name": "epson_ecotank_et_2750",
+        "title": "EPSON EcoTank ET-2750",
+        "titleLang": {
+            "en": "EPSON EcoTank ET-2750",
+            "de": "EPSON EcoTank ET-2750",
+            "ru": "EPSON EcoTank ET-2750",
+            "pt": "EPSON EcoTank ET-2750",
+            "nl": "EPSON EcoTank ET-2750",
+            "fr": "EPSON EcoTank ET-2750",
+            "it": "EPSON EcoTank ET-2750",
+            "es": "EPSON EcoTank ET-2750",
+            "pl": "EPSON EcoTank ET-2750",
+            "zh-cn": "爱普生EcoTank ET-2750"
+        },
+        "desc": {
+            "en": "This adapter read tank level and other information from EPSON EcoTank ET-2750 and store in ioBroker.\n EPSON EcoTank ET-4750 is also supported (tested by Homoran)\n EPSON EcoTank ET-3750 is also supported (tested by christofkac)\nEPSON EcoTank ET-2721 is also supported (tested by mikepiko)",
+            "de": "Dieser Adapter liest den Tankfüllstand und andere Informationen aus dem EPSON EcoTank ET-2750 und speichert ihn in ioBroker.\n EPSON EcoTank ET-4750 is also supported (tested by Homoran)\n EPSON EcoTank ET-3750 is also supported (tested by christofkac)\nEPSON EcoTank ET-2721 is also supported (tested by mikepiko)",
+            "ru": "Этот адаптер считывает уровень в резервуаре и другую информацию из EPSON EcoTank ET-2750 и сохраняет в ioBroker.\n EPSON EcoTank ET-4750 is also supported (tested by Homoran)\n EPSON EcoTank ET-3750 is also supported (tested by christofkac)\nEPSON EcoTank ET-2721 is also supported (tested by mikepiko)",
+            "pt": "Este adaptador lê o nível do tanque e outras informações do EPSON EcoTank ET-2750 e armazena no ioBroker.\n EPSON EcoTank ET-4750 is also supported (tested by Homoran)\n EPSON EcoTank ET-3750 is also supported (tested by christofkac)\nEPSON EcoTank ET-2721 is also supported (tested by mikepiko)",
+            "nl": "Deze adapter leest het tankniveau en andere informatie van de EPSON EcoTank ET-2750 en slaat deze op in ioBroker.\n EPSON EcoTank ET-4750 is also supported (tested by Homoran)\n EPSON EcoTank ET-3750 is also supported (tested by christofkac)\nEPSON EcoTank ET-2721 is also supported (tested by mikepiko)",
+            "fr": "Cet adaptateur lit le niveau du réservoir et d'autres informations d'EPSON EcoTank ET-2750 et stocke dans ioBroker.\n EPSON EcoTank ET-4750 is also supported (tested by Homoran)\n EPSON EcoTank ET-3750 is also supported (tested by christofkac)\nEPSON EcoTank ET-2721 is also supported (tested by mikepiko)",
+            "it": "Questo adattatore legge il livello del serbatoio e altre informazioni da EPSON EcoTank ET-2750 e memorizza in ioBroker.\n EPSON EcoTank ET-4750 is also supported (tested by Homoran)\n EPSON EcoTank ET-3750 is also supported (tested by christofkac)\nEPSON EcoTank ET-2721 is also supported (tested by mikepiko)",
+            "es": "Este adaptador lee el nivel del tanque y otra información de EPSON EcoTank ET-2750 y lo almacena en ioBroker.\n EPSON EcoTank ET-4750 is also supported (tested by Homoran)\n EPSON EcoTank ET-3750 is also supported (tested by christofkac)\nEPSON EcoTank ET-2721 is also supported (tested by mikepiko)",
+            "pl": "Ten adapter odczytuje poziom w zbiorniku i inne informacje z EPSON EcoTank ET-2750 i zapisuje w ioBroker.\n EPSON EcoTank ET-4750 is also supported (tested by Homoran)\n EPSON EcoTank ET-3750 is also supported (tested by christofkac)\nEPSON EcoTank ET-2721 is also supported (tested by mikepiko)",
+            "zh-cn": "该适配器从EPSON EcoTank ET-2750读取水箱液位和其他信息，并存储在ioBroker中。\n "
+        },
+        "version": "0.0.11",
+        "news": {
+            "0.0.11": {
+                "en": "fix name for Workforce 3620\nfix firmware for Workforce 3620",
+                "de": "fixer Name für Workforce 3620\nFix Firmware für Workforce 3620",
+                "ru": "исправить имя для Workforce 3620\nисправить прошивку для Workforce 3620",
+                "pt": "nome da correção para Workforce 3620\ncorrigir firmware para Workforce 3620",
+                "nl": "naam repareren voor Workforce 3620\nfirmware repareren voor Workforce 3620",
+                "fr": "corriger le nom de Workforce 3620\ncorrection du micrologiciel pour Workforce 3620",
+                "it": "correggere il nome per Workforce 3620\ncorreggere il firmware per Workforce 3620",
+                "es": "arreglar nombre para Workforce 3620\narreglar firmware para Workforce 3620",
+                "pl": "naprawić nazwę dla Workforce 3620\nnapraw firmware dla Workforce 3620",
+                "zh-cn": "Workforce 3620 的固定名称\n修复 Workforce 3620 的固件"
+            },
+            "0.0.10": {
+                "en": "fix translation",
+                "de": "Übersetzung korrigieren",
+                "ru": "исправить перевод",
+                "pt": "corrigir tradução",
+                "nl": "vertaling repareren",
+                "fr": "corriger la traduction",
+                "it": "correggere la traduzione",
+                "es": "arreglar traducción",
+                "pl": "napraw tłumaczenie",
+                "zh-cn": "修复翻译"
+            },
+            "0.0.9": {
+                "en": "bugfix for incorrect mapping of settings, second try ...",
+                "de": "Bugfix für falsche Zuordnung von Einstellungen, zweiter Versuch ...",
+                "ru": "исправление неправильного отображения настроек, вторая попытка ...",
+                "pt": "correção de bug para mapeamento incorreto de configurações, segunda tentativa ...",
+                "nl": "bugfix voor onjuiste toewijzing van instellingen, tweede poging ...",
+                "fr": "correction de bug pour un mappage incorrect des paramètres, deuxième essai ...",
+                "it": "bugfix per la mappatura errata delle impostazioni, secondo tentativo ...",
+                "es": "corrección de errores para el mapeo incorrecto de la configuración, segundo intento ...",
+                "pl": "poprawka błędnego mapowania ustawień, druga próba...",
+                "zh-cn": "错误修正了不正确的设置映射，第二次尝试......"
+            },
+            "0.0.8": {
+                "en": "bugfix for incorrect mapping of settings",
+                "de": "Bugfix für falsche Zuordnung von Einstellungen",
+                "ru": "исправление некорректного отображения настроек",
+                "pt": "correção de bug para mapeamento incorreto de configurações",
+                "nl": "bugfix voor onjuiste toewijzing van instellingen",
+                "fr": "correction de bug pour le mappage incorrect des paramètres",
+                "it": "bugfix per la mappatura errata delle impostazioni",
+                "es": "corrección de errores para el mapeo incorrecto de la configuración",
+                "pl": "poprawka błędnego mapowania ustawień",
+                "zh-cn": "错误修正了不正确的设置映射"
+            },
+            "0.0.7": {
+                "en": "change UI to JSONConfig",
+                "de": "Ändern Sie die Benutzeroberfläche in JSONConfig",
+                "ru": "изменить пользовательский интерфейс на JSONConfig",
+                "pt": "alterar a IU para JSONConfig",
+                "nl": "verander gebruikersinterface in JSONConfig",
+                "fr": "changer l'interface utilisateur en JSONConfig",
+                "it": "cambia l'interfaccia utente in JSONConfig",
+                "es": "cambiar la interfaz de usuario a JSONConfig",
+                "pl": "zmień interfejs użytkownika na JSONConfig",
+                "zh-cn": "将 UI 更改为 JSONConfig"
+            },
+            "0.0.6": {
+                "en": "better unload handling",
+                "de": "besseres Entladehandling",
+                "ru": "лучшая разгрузка",
+                "pt": "melhor manuseio de descarga",
+                "nl": "betere losbehandeling",
+                "fr": "meilleure gestion du déchargement",
+                "it": "migliore gestione dello scarico",
+                "es": "mejor manejo de descarga",
+                "pl": "lepsza obsługa rozładunku",
+                "zh-cn": "更好的卸载处理"
+            },
+            "0.0.5": {
+                "en": "fix js-controller 3.3.x warnings",
+                "de": "Beheben Sie die Warnungen von js-controller 3.3.x.",
+                "ru": "исправить предупреждения js-controller 3.3.x",
+                "pt": "corrigir avisos do js-controller 3.3.x",
+                "nl": "fix js-controller 3.3.x waarschuwingen",
+                "fr": "correction des avertissements de js-controller 3.3.x",
+                "it": "correggere gli avvisi di js-controller 3.3.x.",
+                "es": "corregir las advertencias de js-controller 3.3.x",
+                "pl": "napraw ostrzeżenia js-controller 3.3.x.",
+                "zh-cn": "修复js-controller 3.3.x警告"
+            },
+            "0.0.4": {
+                "en": "bugfix first_print_date for 4750\ncode cleaning and refactoring",
+                "de": "Bugfix first_print_date für 4750\nCode-Reinigung und Refactoring",
+                "ru": "исправление first_print_date для 4750\nчистка и рефакторинг кода",
+                "pt": "correção de bug first_print_date para 4750\nlimpeza e refatoração de código",
+                "nl": "bugfix first_print_date voor 4750\ncode opschonen en refactoren",
+                "fr": "bugfix first_print_date pour 4750\nnettoyage et refactoring de code",
+                "it": "bugfix first_print_date per 4750\npulizia e refactoring del codice",
+                "es": "corrección de errores first_print_date para 4750\nlimpieza y refactorización de código",
+                "pl": "naprawa błędu first_print_date dla 4750\nczyszczenie i refaktoryzacja kodu",
+                "zh-cn": "错误修正first_print_date为4750\n代码清理和重构"
+            },
+            "0.0.3": {
+                "en": "Add compact mode\nAll necessary changes for EPSON EcoTank ET-2750\nNew tree structure\nReplacing the request with axios npm module",
+                "de": "Kompaktmodus hinzufügen\nAlle notwendigen Änderungen für EPSON EcoTank ET-2750\nNeue Baumstruktur\nErsetzen der Anforderung durch das axios npm-Modul",
+                "ru": "Добавить компактный режим\nВсе необходимые изменения для EPSON EcoTank ET-2750\nНовая древовидная структура\nЗамена запроса на модуль axios npm",
+                "pt": "Adicionar modo compacto\nTodas as alterações necessárias para EPSON EcoTank ET-2750\nNova estrutura de árvore\nSubstituindo a solicitação com o módulo axios npm",
+                "nl": "Voeg compacte modus toe\nAlle noodzakelijke wijzigingen voor EPSON EcoTank ET-2750\nNieuwe boomstructuur\nHet verzoek vervangen door een axios npm-module",
+                "fr": "Ajouter le mode compact\nToutes les modifications nécessaires pour EPSON EcoTank ET-2750\nNouvelle arborescence\nRemplacement de la requête par le module axios npm",
+                "it": "Aggiungi la modalità compatta\nTutte le modifiche necessarie per EPSON EcoTank ET-2750\nNuova struttura ad albero\nSostituzione della richiesta con il modulo axios npm",
+                "es": "Agregar modo compacto\nTodos los cambios necesarios para EPSON EcoTank ET-2750\nNueva estructura de árbol\nReemplazo de la solicitud con el módulo axios npm",
+                "pl": "Dodaj tryb kompaktowy\nWszystkie niezbędne zmiany dla EPSON EcoTank ET-2750\nNowa struktura drzewa\nZastąpienie żądania modułem axios npm",
+                "zh-cn": "添加紧凑模式\nEPSON EcoTank ET-2750的所有必要更改\n新树结构\n用axios npm模块替换请求"
+            },
+            "0.0.1": {
+                "en": "forked from rrov1 Epson Workforce",
+                "de": "forked from rrov1 Epson Workforce",
+                "ru": "вилка из Рров1 Epson Workforce",
+                "pt": "bifurcado de rrov1 Epson Workforce",
+                "nl": "gevorkt van rrov1 Epson Workforce",
+                "fr": "fourchu de rrov1 Epson Workforce",
+                "it": "biforcuta da rrov1 Epson Workforce",
+                "es": "bifurcado de rrov1 Epson Workforce",
+                "pl": "rozwidlony z rrov1 Epson Workforce",
+                "zh-cn": "从rrov1 Epson Workforce分叉"
+            }
+        },
+        "mode": "daemon",
+        "compact": true,
+        "connectionType": "local",
+        "dataSource": "poll",
+        "platform": "javascript/Node.js",
+        "loglevel": "info",
+        "materialize": true,
+        "keywords": [
+            "printer",
+            "ink",
+            "Epson",
+            "Tinte",
+            "Drucker",
+            "pix",
+            "office"
+        ],
+        "main": "main.js",
+        "authors": [
+            "Dennis Rathjen <info@bastelbunker.de>"
+        ],
+        "license": "MIT",
+        "readme": "https://github.com/o0shojo0o/ioBroker.epson_ecotank_et_2750/blob/master/README.md",
+        "icon": "epson_ecotank_et_2750.png",
+        "extIcon": "https://raw.githubusercontent.com/o0shojo0o/ioBroker.epson_ecotank_et_2750/master/admin/epson_ecotank_et_2750.png",
+        "allowInit": true,
+        "type": "infrastructure",
+        "dependencies": [
+            {
+                "js-controller": ">=2.0.0"
+            }
+        ],
+        "adminUI": {
+            "config": "json"
+        }
     },
-    "desc": {
-      "en": "This adapter read tank level and other information from EPSON EcoTank ET-2750 and store in ioBroker.\n EPSON EcoTank ET-4750 is also supported (tested by Homoran)\n EPSON EcoTank ET-3750 is also supported (tested by christofkac)\nEPSON EcoTank ET-2721 is also supported (tested by mikepiko)",
-      "de": "Dieser Adapter liest den Tankfüllstand und andere Informationen aus dem EPSON EcoTank ET-2750 und speichert ihn in ioBroker.\n EPSON EcoTank ET-4750 is also supported (tested by Homoran)\n EPSON EcoTank ET-3750 is also supported (tested by christofkac)\nEPSON EcoTank ET-2721 is also supported (tested by mikepiko)",
-      "ru": "Этот адаптер считывает уровень в резервуаре и другую информацию из EPSON EcoTank ET-2750 и сохраняет в ioBroker.\n EPSON EcoTank ET-4750 is also supported (tested by Homoran)\n EPSON EcoTank ET-3750 is also supported (tested by christofkac)\nEPSON EcoTank ET-2721 is also supported (tested by mikepiko)",
-      "pt": "Este adaptador lê o nível do tanque e outras informações do EPSON EcoTank ET-2750 e armazena no ioBroker.\n EPSON EcoTank ET-4750 is also supported (tested by Homoran)\n EPSON EcoTank ET-3750 is also supported (tested by christofkac)\nEPSON EcoTank ET-2721 is also supported (tested by mikepiko)",
-      "nl": "Deze adapter leest het tankniveau en andere informatie van de EPSON EcoTank ET-2750 en slaat deze op in ioBroker.\n EPSON EcoTank ET-4750 is also supported (tested by Homoran)\n EPSON EcoTank ET-3750 is also supported (tested by christofkac)\nEPSON EcoTank ET-2721 is also supported (tested by mikepiko)",
-      "fr": "Cet adaptateur lit le niveau du réservoir et d'autres informations d'EPSON EcoTank ET-2750 et stocke dans ioBroker.\n EPSON EcoTank ET-4750 is also supported (tested by Homoran)\n EPSON EcoTank ET-3750 is also supported (tested by christofkac)\nEPSON EcoTank ET-2721 is also supported (tested by mikepiko)",
-      "it": "Questo adattatore legge il livello del serbatoio e altre informazioni da EPSON EcoTank ET-2750 e memorizza in ioBroker.\n EPSON EcoTank ET-4750 is also supported (tested by Homoran)\n EPSON EcoTank ET-3750 is also supported (tested by christofkac)\nEPSON EcoTank ET-2721 is also supported (tested by mikepiko)",
-      "es": "Este adaptador lee el nivel del tanque y otra información de EPSON EcoTank ET-2750 y lo almacena en ioBroker.\n EPSON EcoTank ET-4750 is also supported (tested by Homoran)\n EPSON EcoTank ET-3750 is also supported (tested by christofkac)\nEPSON EcoTank ET-2721 is also supported (tested by mikepiko)",
-      "pl": "Ten adapter odczytuje poziom w zbiorniku i inne informacje z EPSON EcoTank ET-2750 i zapisuje w ioBroker.\n EPSON EcoTank ET-4750 is also supported (tested by Homoran)\n EPSON EcoTank ET-3750 is also supported (tested by christofkac)\nEPSON EcoTank ET-2721 is also supported (tested by mikepiko)",
-      "zh-cn": "该适配器从EPSON EcoTank ET-2750读取水箱液位和其他信息，并存储在ioBroker中。\n "
+    "native": {
+        "printerip": "",
+        "printerport": "",
+        "synctime": ""
     },
-    "version": "0.0.12",
-    "news": {
-      "0.0.12": {
-        "en": "fix ETIMEDOUT error",
-        "de": "fehler beheben",
-        "ru": "исправить ETIMEDOUT ошибка",
-        "pt": "corrigir erro ETIMEDOUT",
-        "nl": "vertaling:",
-        "fr": "corriger l'erreur ETIMEDOUT",
-        "it": "correzione errore ETIMEDOUT",
-        "es": "corrido error ETIMEDOUT",
-        "pl": "eTIMEDOUT error",
-        "zh-cn": "fix ETIMEUT的错误"
-      },
-      "0.0.11": {
-        "en": "fix name for Workforce 3620\nfix firmware for Workforce 3620",
-        "de": "fixer Name für Workforce 3620\nFix Firmware für Workforce 3620",
-        "ru": "исправить имя для Workforce 3620\nисправить прошивку для Workforce 3620",
-        "pt": "nome da correção para Workforce 3620\ncorrigir firmware para Workforce 3620",
-        "nl": "naam repareren voor Workforce 3620\nfirmware repareren voor Workforce 3620",
-        "fr": "corriger le nom de Workforce 3620\ncorrection du micrologiciel pour Workforce 3620",
-        "it": "correggere il nome per Workforce 3620\ncorreggere il firmware per Workforce 3620",
-        "es": "arreglar nombre para Workforce 3620\narreglar firmware para Workforce 3620",
-        "pl": "naprawić nazwę dla Workforce 3620\nnapraw firmware dla Workforce 3620",
-        "zh-cn": "Workforce 3620 的固定名称\n修复 Workforce 3620 的固件"
-      },
-      "0.0.10": {
-        "en": "fix translation",
-        "de": "Übersetzung korrigieren",
-        "ru": "исправить перевод",
-        "pt": "corrigir tradução",
-        "nl": "vertaling repareren",
-        "fr": "corriger la traduction",
-        "it": "correggere la traduzione",
-        "es": "arreglar traducción",
-        "pl": "napraw tłumaczenie",
-        "zh-cn": "修复翻译"
-      },
-      "0.0.9": {
-        "en": "bugfix for incorrect mapping of settings, second try ...",
-        "de": "Bugfix für falsche Zuordnung von Einstellungen, zweiter Versuch ...",
-        "ru": "исправление неправильного отображения настроек, вторая попытка ...",
-        "pt": "correção de bug para mapeamento incorreto de configurações, segunda tentativa ...",
-        "nl": "bugfix voor onjuiste toewijzing van instellingen, tweede poging ...",
-        "fr": "correction de bug pour un mappage incorrect des paramètres, deuxième essai ...",
-        "it": "bugfix per la mappatura errata delle impostazioni, secondo tentativo ...",
-        "es": "corrección de errores para el mapeo incorrecto de la configuración, segundo intento ...",
-        "pl": "poprawka błędnego mapowania ustawień, druga próba...",
-        "zh-cn": "错误修正了不正确的设置映射，第二次尝试......"
-      },
-      "0.0.8": {
-        "en": "bugfix for incorrect mapping of settings",
-        "de": "Bugfix für falsche Zuordnung von Einstellungen",
-        "ru": "исправление некорректного отображения настроек",
-        "pt": "correção de bug para mapeamento incorreto de configurações",
-        "nl": "bugfix voor onjuiste toewijzing van instellingen",
-        "fr": "correction de bug pour le mappage incorrect des paramètres",
-        "it": "bugfix per la mappatura errata delle impostazioni",
-        "es": "corrección de errores para el mapeo incorrecto de la configuración",
-        "pl": "poprawka błędnego mapowania ustawień",
-        "zh-cn": "错误修正了不正确的设置映射"
-      },
-      "0.0.7": {
-        "en": "change UI to JSONConfig",
-        "de": "Ändern Sie die Benutzeroberfläche in JSONConfig",
-        "ru": "изменить пользовательский интерфейс на JSONConfig",
-        "pt": "alterar a IU para JSONConfig",
-        "nl": "verander gebruikersinterface in JSONConfig",
-        "fr": "changer l'interface utilisateur en JSONConfig",
-        "it": "cambia l'interfaccia utente in JSONConfig",
-        "es": "cambiar la interfaz de usuario a JSONConfig",
-        "pl": "zmień interfejs użytkownika na JSONConfig",
-        "zh-cn": "将 UI 更改为 JSONConfig"
-      },
-      "0.0.6": {
-        "en": "better unload handling",
-        "de": "besseres Entladehandling",
-        "ru": "лучшая разгрузка",
-        "pt": "melhor manuseio de descarga",
-        "nl": "betere losbehandeling",
-        "fr": "meilleure gestion du déchargement",
-        "it": "migliore gestione dello scarico",
-        "es": "mejor manejo de descarga",
-        "pl": "lepsza obsługa rozładunku",
-        "zh-cn": "更好的卸载处理"
-      }
-    },
-    "mode": "daemon",
-    "compact": true,
-    "connectionType": "local",
-    "dataSource": "poll",
-    "platform": "javascript/Node.js",
-    "loglevel": "info",
-    "materialize": true,
-    "keywords": [
-      "printer",
-      "ink",
-      "Epson",
-      "Tinte",
-      "Drucker",
-      "pix",
-      "office"
-    ],
-    "main": "main.js",
-    "authors": [
-      "Dennis Rathjen <info@bastelbunker.de>"
-    ],
-    "license": "MIT",
-    "readme": "https://github.com/o0shojo0o/ioBroker.epson_ecotank_et_2750/blob/master/README.md",
-    "icon": "epson_ecotank_et_2750.png",
-    "extIcon": "https://raw.githubusercontent.com/o0shojo0o/ioBroker.epson_ecotank_et_2750/master/admin/epson_ecotank_et_2750.png",
-    "allowInit": true,
-    "type": "infrastructure",
-    "dependencies": [
-      {
-        "js-controller": ">=2.0.0"
-      }
-    ],
-    "adminUI": {
-      "config": "json"
-    }
-  },
-  "native": {
-    "printerip": "",
-    "printerport": "",
-    "synctime": ""
-  },
-  "objects": [],
-  "instanceObjects": [
-    {
-      "_id": "info",
-      "type": "channel",
-      "common": {
-        "name": "Information"
-      },
-      "native": {}
-    },
-    {
-      "_id": "info.connection",
-      "type": "state",
-      "common": {
-        "role": "indicator.connected",
-        "name": "Printer connected",
-        "type": "boolean",
-        "read": true,
-        "write": false,
-        "def": false
-      },
-      "native": {}
-    },
-    {
-      "_id": "inks",
-      "type": "channel",
-      "common": {
-        "role": "",
-        "name": "Different inks of printer"
-      },
-      "native": {}
-    },
-    {
-      "_id": "info.ip",
-      "type": "state",
-      "common": {
-        "name": "Printer IP",
-        "desc": "Printer IP adress",
-        "type": "string",
-        "read": true,
-        "write": false
-      },
-      "native": {}
-    },
-    {
-      "_id": "info.mac",
-      "type": "state",
-      "common": {
-        "name": "Printer MAC",
-        "desc": "Printer MAC adress",
-        "type": "string",
-        "read": true,
-        "write": false
-      },
-      "native": {}
-    },
-    {
-      "_id": "info.model",
-      "type": "state",
-      "common": {
-        "name": "Printer Model",
-        "desc": "Printer model type",
-        "type": "string",
-        "read": true,
-        "write": false
-      },
-      "native": {}
-    },
-    {
-      "_id": "info.name",
-      "type": "state",
-      "common": {
-        "name": "Printer Name",
-        "desc": "Printer Name",
-        "type": "string",
-        "read": true,
-        "write": false
-      },
-      "native": {}
-    },
-    {
-      "_id": "info.firmware",
-      "type": "state",
-      "common": {
-        "name": "Printer Firmware",
-        "desc": "Printer firmware version",
-        "type": "string",
-        "read": true,
-        "write": false
-      },
-      "native": {}
-    },
-    {
-      "_id": "info.serial",
-      "type": "state",
-      "common": {
-        "name": "Printer Serial Number",
-        "desc": "Printer Serial Number",
-        "type": "string",
-        "read": true,
-        "write": false
-      },
-      "native": {}
-    },
-    {
-      "_id": "info.first_print_date",
-      "type": "state",
-      "common": {
-        "name": "Printer First Print Date",
-        "desc": "Printer First Print Date",
-        "type": "string",
-        "read": true,
-        "write": false
-      },
-      "native": {}
-    },
-    {
-      "_id": "info.page_count",
-      "type": "state",
-      "common": {
-        "name": "Printed Pages Count",
-        "desc": "Printed Pages Count",
-        "type": "number",
-        "read": true,
-        "write": false
-      },
-      "native": {}
-    }
-  ]
+    "objects": [],
+    "instanceObjects": [
+        {
+            "_id": "info",
+            "type": "channel",
+            "common": {
+                "name": "Information"
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.connection",
+            "type": "state",
+            "common": {
+                "role": "indicator.connected",
+                "name": "Printer connected",
+                "type": "boolean",
+                "read": true,
+                "write": false,
+                "def": false
+            },
+            "native": {}
+        },
+        {
+            "_id": "inks",
+            "type": "channel",
+            "common": {
+                "role": "",
+                "name": "Different inks of printer"
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.ip",
+            "type": "state",
+            "common": {
+                "name": "Printer IP",
+                "desc": "Printer IP adress",
+                "type": "string",
+                "read": true,
+                "write": false
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.mac",
+            "type": "state",
+            "common": {
+                "name": "Printer MAC",
+                "desc": "Printer MAC adress",
+                "type": "string",
+                "read": true,
+                "write": false
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.model",
+            "type": "state",
+            "common": {
+                "name": "Printer Model",
+                "desc": "Printer model type",
+                "type": "string",
+                "read": true,
+                "write": false
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.name",
+            "type": "state",
+            "common": {
+                "name": "Printer Name",
+                "desc": "Printer Name",
+                "type": "string",
+                "read": true,
+                "write": false
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.firmware",
+            "type": "state",
+            "common": {
+                "name": "Printer Firmware",
+                "desc": "Printer firmware version",
+                "type": "string",
+                "read": true,
+                "write": false
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.serial",
+            "type": "state",
+            "common": {
+                "name": "Printer Serial Number",
+                "desc": "Printer Serial Number",
+                "type": "string",
+                "read": true,
+                "write": false
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.first_print_date",
+            "type": "state",
+            "common": {
+                "name": "Printer First Print Date",
+                "desc": "Printer First Print Date",
+                "type": "string",
+                "read": true,
+                "write": false
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.page_count",
+            "type": "state",
+            "common": {
+                "name": "Printed Pages Count",
+                "desc": "Printed Pages Count",
+                "type": "number",
+                "read": true,
+                "write": false
+            },
+            "native": {}
+        }
+    ]
 }
