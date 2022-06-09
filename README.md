@@ -34,6 +34,10 @@ This adapter read tank level and other information from [EPSON EcoTank ET-2750](
 	### **WORK IN PROGRESS**
 -->
 
+### **WORK IN PROGRESS**
+
+-   (o0Shojo0o)  fix ETIMEDOUT error
+
 ### 0.0.11 (2021-08-24)
 
 -   (o0Shojo0o) fix name for Workforce 3620
