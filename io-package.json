@@ -27,9 +27,9 @@
       "zh-cn": "该适配器从EPSON EcoTank ET-2750读取水箱液位和其他信息，并存储在ioBroker中。\n ",
       "uk": "Цей адаптер зчитує рівень бака та іншу інформацію з EPSON EcoTank ET-2750 і зберігає в ioBroker.\n Також підтримується EPSON EcoTank ET-4750 (перевірено Homoran)\n EPSON EcoTank ET-3750 також підтримується (перевірено christofkac)\nEPSON EcoTank ET-2721 також підтримується (перевірено mikepiko)"
     },
-    "version": "1.0.0-alpha.0",
+    "version": "1.0.0",
     "news": {
-      "1.0.0-alpha.0": {
+      "1.0.0": {
         "en": "Adapter has been moved to iobroker-community-adapter organisation.\nAdapter requires js-controller 5, admin 6 and node.js 20 now.\nDependencies have been updated.",
         "de": "Adapter wurde in die iobroker-community-Adapter-Organisation verschoben.\nAdapter benötigt jetzt js-controller 5, admin 6 und node.js 20.\nAbhängigkeiten wurden aktualisiert.",
         "ru": "Адаптер был перемещен в организацию iobroker-community-adapter.\nAdapter requires js-controller 5, admin 6 and node.js 20 now.\nЗависимость была обновлена.",
@@ -106,19 +106,6 @@
         "pl": "poprawka błędnego mapowania ustawień",
         "zh-cn": "错误修正了不正确的设置映射",
         "uk": "виправлення помилки неправильного відображення налаштувань"
-      },
-      "0.0.7": {
-        "en": "change UI to JSONConfig",
-        "de": "Ändern Sie die Benutzeroberfläche in JSONConfig",
-        "ru": "изменить пользовательский интерфейс на JSONConfig",
-        "pt": "alterar a IU para JSONConfig",
-        "nl": "verander gebruikersinterface in JSONConfig",
-        "fr": "changer l'interface utilisateur en JSONConfig",
-        "it": "cambia l'interfaccia utente in JSONConfig",
-        "es": "cambiar la interfaz de usuario a JSONConfig",
-        "pl": "zmień interfejs użytkownika na JSONConfig",
-        "zh-cn": "将 UI 更改为 JSONConfig",
-        "uk": "змінити інтерфейс користувача на JSONConfig"
       }
     },
     "mode": "daemon",
