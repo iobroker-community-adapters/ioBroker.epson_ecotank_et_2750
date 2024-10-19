@@ -16,6 +16,14 @@ This adapter read tank level and other information from [EPSON EcoTank ET-2750](
 [EPSON EcoTank ET-2721](https://www.epson.de/products/printers/inkjet-printers/for-home/ecotank-et-2721) is also supported (tested by [mikepiko](https://github.com/mikepiko))  
 [EPSON WORKFORCE WF-3620DWF](https://www.epson.de/products/printers/inkjet-printers/for-home/workforce-wf-3620dwf) is also supported (tested by [HReimann](https://github.com/HReimann))
 
+## Credits
+
+This adapter would not have been possible without the great work of @o0Shojo0o (https://github.com/o0Shojo0o), who developed former releases of this adapter.
+
+## How to report issues and feature requests
+
+Ideally, please use GitHub issues for this, with the best method achieved by setting the adapter to Debug log mode (Instances -> Expert mode -> Column Log level). Then retrieve the logfile from disk via the  'log' ioBroker subdirectory, **not** from Admin, which will cut lines. 
+
 ## Configuration
 
 1. Create a new instance of the adapter
@@ -26,13 +34,14 @@ This adapter read tank level and other information from [EPSON EcoTank ET-2750](
 ## Changelog
 
 <!--
- https://github.com/AlCalzone/release-script#usage
-    npm run release minor -- --all 0.9.8 -> 0.10.0
-    npm run release patch -- --all 0.9.8 -> 0.9.9
-    npm run release prerelease beta -- --all v0.2.1 -> v0.2.2-beta.0
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+- (mcm1957) Adapter has been moved to iobroker-community-adapter organisation.
+- (mcm1957) Adapter requires js-controller 5, admin 6 and node.js 20 now.
+- (mcm1957) Dependencies have been updated.
+
 ### 0.0.12 (2022-06-09)
 
 -   (o0Shojo0o) fix ETIMEDOUT error
