@@ -137,14 +137,14 @@
             "pix",
             "office"
         ],
-        "main": "main.js",
         "authors": [
-            "Dennis Rathjen <info@bastelbunker.de>"
+            "Dennis Rathjen <dennis.rathjen@outlook.de>",
+            "Iobroker Community<iobroker-community-adapters@gmx.de>"
         ],
         "license": "MIT",
-        "readme": "https://github.com/o0shojo0o/ioBroker.epson_ecotank_et_2750/blob/master/README.md",
+        "readme": "https://github.com/iobroker-community-adapters/ioBroker.epson_ecotank_et_2750/blob/master/README.md",
         "icon": "epson_ecotank_et_2750.png",
-        "extIcon": "https://raw.githubusercontent.com/o0shojo0o/ioBroker.epson_ecotank_et_2750/master/admin/epson_ecotank_et_2750.png",
+        "extIcon": "https://raw.githubusercontent.com/iobroker-community-adapters/ioBroker.epson_ecotank_et_2750/master/admin/epson_ecotank_et_2750.png",
         "allowInit": true,
         "type": "infrastructure",
         "dependencies": [
