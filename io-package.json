@@ -127,7 +127,7 @@
         "dataSource": "poll",
         "platform": "javascript/Node.js",
         "loglevel": "info",
-        "materialize": true,
+        "tier": 3,
         "keywords": [
             "printer",
             "ink",
@@ -141,7 +141,10 @@
             "Dennis Rathjen <dennis.rathjen@outlook.de>",
             "Iobroker Community<iobroker-community-adapters@gmx.de>"
         ],
-        "license": "MIT",
+        "licenseInformation": {
+            "type": "free",
+            "license": "MIT"
+        },
         "readme": "https://github.com/iobroker-community-adapters/ioBroker.epson_ecotank_et_2750/blob/master/README.md",
         "icon": "epson_ecotank_et_2750.png",
         "extIcon": "https://raw.githubusercontent.com/iobroker-community-adapters/ioBroker.epson_ecotank_et_2750/master/admin/epson_ecotank_et_2750.png",
@@ -149,7 +152,12 @@
         "type": "infrastructure",
         "dependencies": [
             {
-                "js-controller": ">=2.0.0"
+              "js-controller": ">=5.0.19"
+            }
+        ],
+        "globalDependencies": [
+            {
+                "admin": ">=6.17.14"
             }
         ],
         "adminUI": {
