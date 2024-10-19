@@ -1,7 +1,7 @@
 {
   "name": "iobroker.epson_ecotank_et_2750",
   "description": "Ink status and more of EPSON EcoTank ET-2750",
-  "version": "0.0.12",
+  "version": "1.0.0-alpha.0",
   "author": {
     "name": "Dennis Rathjen",
     "email": "dennis.rathjen@outlook.de"

@@ -37,7 +37,7 @@ Ideally, please use GitHub issues for this, with the best method achieved by set
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.0.0-alpha.0 (2024-10-19)
 - (mcm1957) Adapter has been moved to iobroker-community-adapter organisation.
 - (mcm1957) Adapter requires js-controller 5, admin 6 and node.js 20 now.
 - (mcm1957) Dependencies have been updated.
@@ -58,38 +58,6 @@ Ideally, please use GitHub issues for this, with the best method achieved by set
 ### 0.0.9 (2021-08-18)
 
 -   (o0Shojo0o) bugfix for incorrect mapping of settings, second try ...
-
-### 0.0.8 (2021-08-18)
-
--   (o0Shojo0o) bugfix for incorrect mapping of settings
-
-### 0.0.7 (2021-08-18)
-
--   (o0Shojo0o) change UI to JSONConfig
-
-### 0.0.6 (2021-08-01)
-
--   (o0Shojo0o) better unload handling
-
-### 0.0.5 (2021-05-01)
-
--   (o0shojo0o) fix js-controller 3.3.x warnings
-
-### 0.0.4 (2021-02-01)
-
--   (o0shojo0o) bugfix first_print_date for 4750
--   (o0shojo0o) code cleaning and refactoring
-
-### 0.0.3 (2021-01-14)
-
--   (o0shojo0o) add compact mode
--   (o0shojo0o) all necessary changes for EPSON EcoTank ET-2750
--   (o0shojo0o) new tree structure
--   (o0shojo0o) replacing the request with axios npm module
-
-### 0.0.1 (2021-01-03)
-
--   (o0shojo0o) forked from iobroker.epson_stylus_px830 0.2.1
 
 ## License
 
