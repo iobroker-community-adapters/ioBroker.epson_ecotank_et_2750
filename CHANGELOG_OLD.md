@@ -1,4 +1,8 @@
 # Older changes
+## 0.0.9 (2021-08-18)
+
+-   (o0Shojo0o) bugfix for incorrect mapping of settings, second try ...
+
 ## 0.0.8 (2021-08-18)
 
 -   (o0Shojo0o) bugfix for incorrect mapping of settings

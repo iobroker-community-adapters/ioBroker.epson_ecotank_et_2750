@@ -37,7 +37,7 @@ Ideally, please use GitHub issues for this, with the best method achieved by set
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.0.1 (2024-10-26)
 - (simatec) Admin-UI has been adapted for small displays.
 - (mcm1957) Dependencies have been updated.
 
@@ -58,10 +58,6 @@ Ideally, please use GitHub issues for this, with the best method achieved by set
 ### 0.0.10 (2021-08-19)
 
 -   (o0Shojo0o) fix translation
-
-### 0.0.9 (2021-08-18)
-
--   (o0Shojo0o) bugfix for incorrect mapping of settings, second try ...
 
 ## License
 
