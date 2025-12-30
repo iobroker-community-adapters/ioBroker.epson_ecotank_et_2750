@@ -2,15 +2,9 @@
   "name": "iobroker.epson_ecotank_et_2750",
   "description": "Ink status and more of EPSON EcoTank ET-2750",
   "version": "1.0.1",
-  "author": {
-    "name": "Dennis Rathjen",
-    "email": "dennis.rathjen@outlook.de"
-  },
+  "author": "Dennis Rathjen <dennis.rathjen@outlook.de>",
   "contributors": [
-    {
-      "name": "iobroker-community-adapters",
-      "email": "iobroker-community-adapters@gmx.de"
-    }
+    "iobroker-community-adapters <iobroker-community-adapters@gmx.de>"
   ],
   "homepage": "https://github.com/iobroker-community-adapters/ioBroker.epson_ecotank_et_2750",
   "repository": {
