@@ -43,6 +43,7 @@ Ideally, please use GitHub issues for this, with the best method achieved by set
 - (copilot) Adapter requires admin >= 7.7.22 now
 - (copilot) Adapter requires js-controller >= 6.0.11 now
 - (copilot) Adapter requires admin >= 7.6.17 now
+- (copilot) **CI/CD**: Migrated to ESLint 9 with @iobroker/eslint-config
 
 ### 1.0.1 (2024-10-26)
 - (simatec) Admin-UI has been adapted for small displays.

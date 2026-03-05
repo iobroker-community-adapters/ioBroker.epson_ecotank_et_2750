@@ -18,7 +18,7 @@ function startAdapter(options) {
                 stopReadPrinter();
                 isUnloaded = true;
                 callback();
-            } catch (e) {
+            } catch {
                 callback();
             }
         },
@@ -26,37 +26,41 @@ function startAdapter(options) {
             readSettings();
             main();
             adapter.setState('info.connection', false, true);
-        }
+        },
     });
     adapter = new utils.Adapter(options);
     return adapter;
 }
 
 const ink = {
-    'cyan': {
-        'state': 'cyan',
-        'name': 'Cyan',
-        'inklvl_rx': "IMAGE\\/Ink_C\\.PNG\\' height=\\'([0-9]{1,2})\\'",
-        'cartridge_rx': '\\(C\\)&nbsp;\\:<\\/span><\\/dt><dd class=\\"value clearfix\\"><div class=\\"preserve-white-space\\">([a-zA-Z0-9\\/]*)<\\/div>'
+    cyan: {
+        state: 'cyan',
+        name: 'Cyan',
+        inklvl_rx: "IMAGE\\/Ink_C\\.PNG\\' height=\\'([0-9]{1,2})\\'",
+        cartridge_rx:
+            '\\(C\\)&nbsp;\\:<\\/span><\\/dt><dd class=\\"value clearfix\\"><div class=\\"preserve-white-space\\">([a-zA-Z0-9\\/]*)<\\/div>',
     },
-    'yellow': {
-        'state': 'yellow',
-        'name': 'Yellow',
-        'inklvl_rx': "IMAGE\\/Ink_Y\\.PNG\\' height=\\'([0-9]{1,2})\\'",
-        'cartridge_rx': '\\(Y\\)&nbsp;\\:<\\/span><\\/dt><dd class="value clearfix\\"><div class=\\"preserve-white-space\\">([a-zA-Z0-9\\/]*)<\\/div>'
+    yellow: {
+        state: 'yellow',
+        name: 'Yellow',
+        inklvl_rx: "IMAGE\\/Ink_Y\\.PNG\\' height=\\'([0-9]{1,2})\\'",
+        cartridge_rx:
+            '\\(Y\\)&nbsp;\\:<\\/span><\\/dt><dd class="value clearfix\\"><div class=\\"preserve-white-space\\">([a-zA-Z0-9\\/]*)<\\/div>',
     },
-    'black': {
-        'state': 'black',
-        'name': 'Black',
-        'inklvl_rx': "IMAGE\\/Ink_K\\.PNG\\' height=\\'([0-9]{1,2})\\'",
-        'cartridge_rx': '\\(BK\\)&nbsp;\\:<\\/span><\\/dt><dd class=\\"value clearfix\\"><div class=\\"preserve-white-space\\">([a-zA-Z0-9\\/]*)<\\/div>'
+    black: {
+        state: 'black',
+        name: 'Black',
+        inklvl_rx: "IMAGE\\/Ink_K\\.PNG\\' height=\\'([0-9]{1,2})\\'",
+        cartridge_rx:
+            '\\(BK\\)&nbsp;\\:<\\/span><\\/dt><dd class=\\"value clearfix\\"><div class=\\"preserve-white-space\\">([a-zA-Z0-9\\/]*)<\\/div>',
     },
-    'magenta': {
-        'state': 'magenta',
-        'name': 'Magenta',
-        'inklvl_rx': "IMAGE\\/Ink_M\\.PNG\\' height=\\'([0-9]{1,2})\\'",
-        'cartridge_rx': '\\(M\\)&nbsp;\\:<\\/span><\\/dt><dd class=\\"value clearfix\\"><div class=\\"preserve-white-space\\">([a-zA-Z0-9\\/]*)<\\/div>'
-    }
+    magenta: {
+        state: 'magenta',
+        name: 'Magenta',
+        inklvl_rx: "IMAGE\\/Ink_M\\.PNG\\' height=\\'([0-9]{1,2})\\'",
+        cartridge_rx:
+            '\\(M\\)&nbsp;\\:<\\/span><\\/dt><dd class=\\"value clearfix\\"><div class=\\"preserve-white-space\\">([a-zA-Z0-9\\/]*)<\\/div>',
+    },
 };
 
 function readSettings() {
@@ -64,15 +68,17 @@ function readSettings() {
 
     if (!adapter.config.printerip) {
         adapter.log.warn('No IP adress of printer set up. Adapter will be stopped.');
-    }
-    else { // ip entered
-        ip = (adapter.config.printerport.length > 0) ? adapter.config.printerip + ':' + adapter.config.printerport : adapter.config.printerip; // if port is set then ip+port else ip only
-        adapter.log.debug('IP: ' + ip);
+    } else {
+        // ip entered
+        ip =
+            adapter.config.printerport.length > 0
+                ? `${adapter.config.printerip}:${adapter.config.printerport}`
+                : adapter.config.printerip; // if port is set then ip+port else ip only
+        adapter.log.debug(`IP: ${ip}`);
 
         //check if sync time is entered in settings
-        sync = (!adapter.config.synctime) ? 10 : parseInt(adapter.config.synctime, 10);
-        adapter.log.debug('ioBroker reads printer every ' + sync + ' minutes');
-
+        sync = !adapter.config.synctime ? 10 : parseInt(adapter.config.synctime, 10);
+        adapter.log.debug(`ioBroker reads printer every ${sync} minutes`);
     } // end ip entered
 }
 
@@ -82,41 +88,47 @@ async function readPrinterStatus() {
         return;
     }
 
-    const link = 'http://' + ip + '/PRESENTATION/ADVANCED/INFO_PRTINFO/TOP';
+    const link = `http://${ip}/PRESENTATION/ADVANCED/INFO_PRTINFO/TOP`;
 
     const resp = await axios.get(link);
     if (resp.status === 200) {
         adapter.setState('info.ip', {
             val: ip,
-            ack: true
+            ack: true,
         });
 
         let match, rx;
         // MAC ADRESSE EINLESEN
-        rx = new RegExp(/(?:MAC-Adresse|Printer Name|Adresse MAC Wi-Fi\/R.seau|Indirizzo MAC Wi-Fi\/rete|Dirección MAC de Wi-Fi\/Red|Endereço MAC de Wi-Fi\/Rede)&nbsp;:<\/span><\/dt><dd class=\"value clearfix\"><div class=\"preserve-white-space\">([a-zA-Z0-9:]*)<\/div>/g);
+        rx = new RegExp(
+            /(?:MAC-Adresse|Printer Name|Adresse MAC Wi-Fi\/R.seau|Indirizzo MAC Wi-Fi\/rete|Dirección MAC de Wi-Fi\/Red|Endereço MAC de Wi-Fi\/Rede)&nbsp;:<\/span><\/dt><dd class="value clearfix"><div class="preserve-white-space">([a-zA-Z0-9:]*)<\/div>/g,
+        );
         let mac_string;
         while ((match = rx.exec(resp.data)) != null) {
             mac_string = match[1];
         }
-        adapter.log.debug('mac_string: ' + mac_string);
+        adapter.log.debug(`mac_string: ${mac_string}`);
         adapter.setState('info.mac', { val: mac_string, ack: true });
 
         // read firmware version
-        rx = new RegExp(/(?:Firmware|Firmware-Version)&nbsp;:<\/span><\/dt><dd class=\"value clearfix\"><div class=\"preserve-white-space\">([a-zA-Z0-9 äöüÄÖÜ\-\_\.]*)<\/div>/g);
+        rx = new RegExp(
+            /(?:Firmware|Firmware-Version)&nbsp;:<\/span><\/dt><dd class="value clearfix"><div class="preserve-white-space">([a-zA-Z0-9 äöüÄÖÜ.-]*)<\/div>/g,
+        );
         let firmware_string;
         while ((match = rx.exec(resp.data)) != null) {
             firmware_string = match[1];
         }
-        adapter.log.debug('firmware_string: ' + firmware_string);
+        adapter.log.debug(`firmware_string: ${firmware_string}`);
         adapter.setState('info.firmware', { val: firmware_string, ack: true });
 
         // read serial number
-        rx = new RegExp(/(?:Seriennummer|Serial Number|Numéro de série|Numero di serie|Número de serie|Número de série)&nbsp;:<\/span><\/dt><dd class=\"value clearfix\"><div class=\"preserve-white-space\">([a-zA-Z0-9]*)<\/div>/g);
+        rx = new RegExp(
+            /(?:Seriennummer|Serial Number|Numéro de série|Numero di serie|Número de serie|Número de série)&nbsp;:<\/span><\/dt><dd class="value clearfix"><div class="preserve-white-space">([a-zA-Z0-9]*)<\/div>/g,
+        );
         let serial_string;
         while ((match = rx.exec(resp.data)) != null) {
             serial_string = match[1];
         }
-        adapter.log.debug('serial_string: ' + serial_string);
+        adapter.log.debug(`serial_string: ${serial_string}`);
         adapter.setState('info.serial', { val: serial_string, ack: true });
 
         for (const i in ink) {
@@ -124,14 +136,14 @@ async function readPrinterStatus() {
                 type: 'state',
                 common: {
                     role: 'level.volume',
-                    name: 'Level of ' + ink[i].name,
-                    desc: 'Level of ' + ink[i].name,
+                    name: `Level of ${ink[i].name}`,
+                    desc: `Level of ${ink[i].name}`,
                     type: 'number',
                     unit: '%',
                     read: true,
-                    write: false
+                    write: false,
                 },
-                native: {}
+                native: {},
             });
 
             // read levels
@@ -140,14 +152,13 @@ async function readPrinterStatus() {
             while ((match = rx.exec(resp.data)) != null) {
                 level_string = match[1];
             }
-            adapter.log.debug(ink[i].name + ' Levelstring: ' + level_string + 'px');
-            const level = parseInt(level_string, 10) * 100 / baselevel;
+            adapter.log.debug(`${ink[i].name} Levelstring: ${level_string}px`);
+            const level = (parseInt(level_string, 10) * 100) / baselevel;
             adapter.setState(`inks.${ink[i].state}`, { val: level, ack: true });
-            adapter.log.debug(ink[i].name + ' Level: ' + level + '%');
+            adapter.log.debug(`${ink[i].name} Level: ${level}%`);
         } // end for
 
         adapter.log.debug('Channels and states created/read');
-
     } else {
         adapter.log.warn('Cannot connect to Printer:');
     }
@@ -160,35 +171,35 @@ async function readPrinterNetwork() {
         return;
     }
 
-    const link = 'http://' + ip + '/PRESENTATION/ADVANCED/INFO_NWINFO/TOP';
+    const link = `http://${ip}/PRESENTATION/ADVANCED/INFO_NWINFO/TOP`;
 
     const resp = await axios.get(link);
     if (resp.status === 200) {
-
         adapter.setState('info.ip', {
             val: ip,
-            ack: true
+            ack: true,
         });
 
         let match, rx, name_string, model_string;
         // NAME EINLESEN
-        rx = new RegExp(/(?:Gerätename|Druckername)&nbsp;:<\/span><\/dt><dd class=\"value clearfix\"><div class=\"preserve-white-space\">([a-zA-Z0-9 äöüÄÖÜ\-\_]*)<\/div>/g);
+        rx = new RegExp(
+            /(?:Gerätename|Druckername)&nbsp;:<\/span><\/dt><dd class="value clearfix"><div class="preserve-white-space">([a-zA-Z0-9 äöüÄÖÜ-]*)<\/div>/g,
+        );
         while ((match = rx.exec(resp.data)) != null) {
             name_string = match[1];
         }
-        adapter.log.debug('name_string: ' + name_string);
+        adapter.log.debug(`name_string: ${name_string}`);
         adapter.setState('info.name', { val: name_string, ack: true });
 
         // MODELL EINLESEN
-        rx = new RegExp(/<title>([a-zA-Z0-9 äöüÄÖÜ\-\_]*)<\/title>/g);
+        rx = new RegExp(/<title>([a-zA-Z0-9 äöüÄÖÜ-]*)<\/title>/g);
         while ((match = rx.exec(resp.data)) != null) {
             model_string = match[1];
         }
-        adapter.log.debug('model_string: ' + model_string);
+        adapter.log.debug(`model_string: ${model_string}`);
         adapter.setState('info.model', { val: model_string, ack: true });
 
         adapter.log.debug('Channels and states created/read');
-
     } else {
         adapter.log.warn('Cannot connect to Printer');
     }
@@ -201,41 +212,41 @@ async function readPrinterMaintenance() {
         return;
     }
 
-    const link = 'http://' + ip + '/PRESENTATION/ADVANCED/INFO_MENTINFO/TOP';
+    const link = `http://${ip}/PRESENTATION/ADVANCED/INFO_MENTINFO/TOP`;
 
     const resp = await axios.get(link);
     if (resp.status === 200) {
-
         adapter.setState('info.ip', {
             val: ip,
-            ack: true
+            ack: true,
         });
 
         let match, rx, first_print_string, printed_pages_string;
         // ERSTDRUCKDATUM EINLESEN
-        rx = new RegExp(/(?:Erstdruckdatum|First Printing Date|Date de première impression|Data prima stampa|Primera fecha de impresión|Data da primeira impressão)&nbsp;\:<\/span><\/dt><dd class=\"value clearfix\"><div class=\"preserve-white-space\">((\d\d\-\d\d\-\d\d\d\d)|(\d\d\d\d\-\d\d\-\d\d))<\/div>/g);
+        rx = new RegExp(
+            /(?:Erstdruckdatum|First Printing Date|Date de première impression|Data prima stampa|Primera fecha de impresión|Data da primeira impressão)&nbsp;:<\/span><\/dt><dd class="value clearfix"><div class="preserve-white-space">((\d\d-\d\d-\d\d\d\d)|(\d\d\d\d-\d\d-\d\d))<\/div>/g,
+        );
         while ((match = rx.exec(resp.data)) != null) {
             first_print_string = match[1];
         }
-        adapter.log.debug('first_print_string: ' + first_print_string);
+        adapter.log.debug(`first_print_string: ${first_print_string}`);
         adapter.setState('info.first_print_date', { val: first_print_string, ack: true });
 
         // GESAMTZAHL SEITEN
-        rx = new RegExp(/(?:Gesamtanzahl Seiten)&nbsp;\:<\/span><\/dt><dd class=\"value clearfix\"><div class=\"preserve-white-space\">(\d*)<\/div>/g);
+        rx = new RegExp(
+            /(?:Gesamtanzahl Seiten)&nbsp;:<\/span><\/dt><dd class="value clearfix"><div class="preserve-white-space">(\d*)<\/div>/g,
+        );
         while ((match = rx.exec(resp.data)) != null) {
             printed_pages_string = match[1];
         }
-        adapter.log.debug('printed_pages_string: ' + printed_pages_string);
+        adapter.log.debug(`printed_pages_string: ${printed_pages_string}`);
         const page_count = parseInt(printed_pages_string, 10);
-        adapter.log.debug('page_count: ' + page_count);
+        adapter.log.debug(`page_count: ${page_count}`);
         adapter.setState('info.page_count', { val: page_count, ack: true });
 
-
         adapter.log.debug('Channels and states created/read');
-
     } else {
         adapter.log.warn('Cannot connect to Printer');
-
     }
     adapter.log.debug('finished reading printer maintenance data');
 }
@@ -261,8 +272,7 @@ async function main() {
     } catch (err) {
         if (err.message.includes('EHOSTUNREACH') || err.message.includes('ETIMEDOUT')) {
             adapter.log.debug(`Printer offline, next try in ${sync} minutes...`);
-        }
-        else {
+        } else {
             adapter.log.error(JSON.stringify(err));
         }
         adapter.setState('info.connection', false, true);
