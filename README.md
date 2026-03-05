@@ -36,6 +36,7 @@ Ideally, please use GitHub issues for this, with the best method achieved by set
 <!--
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
+* (iobroker-bot) Updated minimum required Node.js version to 20
 -->
 
 ### **WORK IN PROGRESS**
