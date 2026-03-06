@@ -41,7 +41,7 @@
     "@iobroker/eslint-config": "^2.2.0",
     "@iobroker/testing": "^5.2.2",
     "@types/gulp": "^4.0.18",
-    "@types/node": "^24.11.0"
+    "@types/node": "^24.12.0"
   },
   "bugs": {
     "url": "https://github.com/iobroker-community-adapters/ioBroker.epson_ecotank_et_2750/issues"
