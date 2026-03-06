@@ -125,7 +125,7 @@
     "compact": true,
     "connectionType": "local",
     "dataSource": "poll",
-    "platform": "javascript/Node.js",
+    "platform": "Javascript/Node.js",
     "loglevel": "info",
     "tier": 3,
     "keywords": [
