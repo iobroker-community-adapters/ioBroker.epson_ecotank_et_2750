@@ -27,8 +27,21 @@
       "zh-cn": "该适配器从EPSON EcoTank ET-2750读取水箱液位和其他信息，并存储在ioBroker中。\n ",
       "uk": "Цей адаптер зчитує рівень бака та іншу інформацію з EPSON EcoTank ET-2750 і зберігає в ioBroker.\n Також підтримується EPSON EcoTank ET-4750 (перевірено Homoran)\n EPSON EcoTank ET-3750 також підтримується (перевірено christofkac)\nEPSON EcoTank ET-2721 також підтримується (перевірено mikepiko)"
     },
-    "version": "1.0.1",
+    "version": "1.1.0",
     "news": {
+      "1.1.0": {
+        "en": "Adapter requires node.js >= 20 now.\nAdapter requires admin >= 7.7.22 now\nAdapter requires js-controller >= 6.0.11 now\n**CI/CD**: Migrated to ESLint 9 with @iobroker/eslint-config",
+        "de": "Adapter benötigt jetzt node.js >= 20.\nAdapter benötigt admin >= 7.7.22 jetzt\nAdapter benötigt jetzt js-controller >= 6.0.11\n**CI/CD**: auf ESLint 9 mit @iobroker/eslint-config migriert",
+        "ru": "Адаптер требует node.js >= 20 сейчас.\nАдаптер требует администратора >= 7.7.22\nАдаптер требует js-контроллер >= 6.0.11\n**CI/CD**: перемещен в ESLint 9 с помощью @iobroker/eslint-config",
+        "pt": "O adaptador requer gnod.js >= 20 agora.\nAdaptador requer admin >= 7.7.22 agora\nAdaptador requer js-controlador >= 6.0.11 agora\n**CI/CD**: Migrado para ESLint 9 com @iobroker/eslint-config",
+        "nl": "Voor de adapter zijn node.js < 20 nu nodig.\nAdapter vereist admin < 7.7.22 nu\nAdapter vereist js-controller > 6,0.11 nu\n**CI/CD**: Migreren naar ESLint 9 met @iobroker/eslint-config",
+        "fr": "Adaptateur nécessite node.js >= 20 maintenant.\nAdaptateur nécessite admin >= 7.7.22 maintenant\nAdaptateur nécessite js-controller >= 6.0.11 maintenant\n**CI/CD**: Migré à ESLint 9 avec @iobroker/eslint-config",
+        "it": "Adattatore richiede node.js >= 20 ora.\nAdattatore richiede admin >= 7.7.22 ora\nAdattatore richiede js-controller >= 6.0.11 ora\n**CI/CD**: Migrato a ESLint 9 con @iobroker/eslint-config",
+        "es": "Adaptador requiere node.js >= 20 ahora.\nEl adaptador requiere admin= 7.7.22 ahora\nAdaptador requiere js-controller >= 6.0.11\n**CI/CD**: Migrated to ESLint 9 with @iobroker/eslint-config",
+        "pl": "Adapter wymaga node.js > = 20 teraz.\nAdapter wymaga admin > = 7.7.22\nAdapter wymaga sterownika js- > = 6.0.11\n* *CI / CD* *: Migrated to ESLint 9 with @ iobroker / eslint- config ",
+        "uk": "Адаптер вимагає node.js >= 20 тепер.\nАдаптер вимагає адмін >= 7.7.22 тепер\nАдаптер вимагає js-controller >=6.0.11 тепер\n**CI/CD**: Migrated to ESLint 9 з @iobroker/eslint-config",
+        "zh-cn": "适配器需要节点.js >= 20 现在.\n适任者需要管理员 \\ 7.7.22 现在\n适配器需要js控制器 现在6.0.11\n** CI/CD**:用@iobroduc/eslint-config 移动到ESLint 9"
+      },
       "1.0.1": {
         "en": "Admin-UI has been adapted for small displays.\nDependencies have been updated.",
         "de": "Admin-UI wurde für kleine Displays angepasst.\nAbhängigkeiten wurden aktualisiert.",
@@ -106,19 +119,6 @@
         "pl": "poprawka błędnego mapowania ustawień, druga próba...",
         "zh-cn": "错误修正了不正确的设置映射，第二次尝试......",
         "uk": "виправлення помилки неправильного відображення налаштувань, друга спроба..."
-      },
-      "0.0.8": {
-        "en": "bugfix for incorrect mapping of settings",
-        "de": "Bugfix für falsche Zuordnung von Einstellungen",
-        "ru": "исправление некорректного отображения настроек",
-        "pt": "correção de bug para mapeamento incorreto de configurações",
-        "nl": "bugfix voor onjuiste toewijzing van instellingen",
-        "fr": "correction de bug pour le mappage incorrect des paramètres",
-        "it": "bugfix per la mappatura errata delle impostazioni",
-        "es": "corrección de errores para el mapeo incorrecto de la configuración",
-        "pl": "poprawka błędnego mapowania ustawień",
-        "zh-cn": "错误修正了不正确的设置映射",
-        "uk": "виправлення помилки неправильного відображення налаштувань"
       }
     },
     "mode": "daemon",

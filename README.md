@@ -37,8 +37,7 @@ Ideally, please use GitHub issues for this, with the best method achieved by set
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-
-### **WORK IN PROGRESS**
+### 1.1.0 (2026-03-06)
 - (iobroker-bot) Adapter requires node.js >= 20 now.
 - (copilot) Adapter requires admin >= 7.7.22 now
 - (copilot) Adapter requires js-controller >= 6.0.11 now
@@ -61,10 +60,6 @@ Ideally, please use GitHub issues for this, with the best method achieved by set
 
 -   (o0Shojo0o) fix name for Workforce 3620
 -   (o0Shojo0o) fix firmware for Workforce 3620
-
-### 0.0.10 (2021-08-19)
-
--   (o0Shojo0o) fix translation
 
 ## License
 
